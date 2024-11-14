@@ -1,0 +1,20 @@
+.profile__recipes{
+  width: 100%;
+  padding: 60px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  h2{
+    color: var(--black);
+    span{
+      color: var(--orange);
+    }
+  }
+
+  .recipes__items{
+    display: flex;
+    gap: var(--index);
+    align-items: flex-start;
+  }
+}

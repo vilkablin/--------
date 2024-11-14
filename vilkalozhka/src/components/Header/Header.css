@@ -1,0 +1,179 @@
+header {
+  width: 100%;
+  padding: 60px 24px 30px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .logo {
+  width: 20%;
+}
+header .logo img {
+  width: 100%;
+}
+header .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+}
+header .header__menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: calc(var(--index) -2);
+}
+header .header__menu nav a {
+  font-size: calc(var(--font-size-base) * 0.7);
+  font-weight: 500;
+  color: var(--black);
+  position: relative;
+  padding: 0.8rem 1.25rem;
+  -webkit-transition: all 0.5s cubic-bezier(0.2, 0, 0, 1);
+  transition: all 0.5s cubic-bezier(0.2, 0, 0, 1);
+  z-index: 1;
+}
+header .header__menu nav a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 1.25rem;
+  left: 1.25rem;
+  background-color: var(--orange);
+  -webkit-transition: all 0.5s cubic-bezier(0.2, 0, 0, 1);
+  transition: all 0.5s cubic-bezier(0.2, 0, 0, 1);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  z-index: -1;
+  border-radius: 20px;
+}
+header .header__menu nav a:hover {
+  color: #fff;
+}
+header .header__menu nav a:hover::after {
+  right: 0;
+  left: 0;
+  height: 100%;
+}
+header .header__menu .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+header .header__menu .buttons .search form {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width: 56px;
+  height: 56px;
+  background: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  border: 2px solid var(--black);
+  padding: 8px;
+}
+header .header__menu .buttons .search form svg {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 20%;
+  right: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+header .header__menu .buttons .search form input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: calc(0.8rem + 0.5vw);
+  border-radius: 20px;
+  padding: 0 20px;
+}
+header .header__menu .buttons .search form ::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: var(--font-size-small);
+  color: #707070;
+}
+header .header__menu .buttons .search form ::-moz-placeholder {
+  font-weight: 400;
+  font-size: var(--font-size-small);
+  color: #707070;
+}
+header .header__menu .buttons .search form :-ms-input-placeholder {
+  font-weight: 400;
+  font-size: var(--font-size-small);
+  color: #707070;
+}
+header .header__menu .buttons .search form ::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: var(--font-size-small);
+  color: #707070;
+}
+header .header__menu .buttons .search form ::placeholder {
+  font-weight: 400;
+  font-size: var(--font-size-small);
+  color: #707070;
+}
+header .header__menu .buttons .search form:hover {
+  width: 220px;
+  cursor: pointer;
+}
+header .header__menu .buttons .search form:hover input {
+  display: block;
+}
+header .header__menu .buttons a {
+  border: 2px solid var(--black);
+  border-radius: 20px;
+  padding: 0 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  gap: 4px;
+}
+header .header__menu .buttons a p {
+  font-weight: 500;
+  font-size: var(--font-size-small);
+  color: var(--black);
+}
+header .header__menu .buttons a:hover {
+  border: 2px solid var(--orange);
+  background: var(--orange);
+}
+header .header__menu .buttons a:hover p {
+  color: #fff;
+}
+header .header__menu .buttons a:hover svg path {
+  fill: #fff;
+}

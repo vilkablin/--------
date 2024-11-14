@@ -1,0 +1,97 @@
+.bread-crumbs {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+  padding: 60px 24px 30px 24px;
+
+  a {
+    font-weight: 400;
+    font-size: var(--font-size-small);
+    color: #707070;
+  }
+
+  a.active {
+    font-weight: 500;
+    font-size: calc(var(--font-size-small-base));
+    color: var(--orange);
+  }
+}
+
+.recipeInformation {
+  padding: 0 24px 40px 24px;
+  display: flex;
+  justify-content: space-between;
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+
+    .bottom__info {
+      align-items: end;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-weight: 500;
+        span {
+          font-weight: 400;
+          color: #707070;
+        }
+      }
+
+      .statistics {
+        display: flex;
+        gap: 10px;
+        align-items: flex-end;
+
+        button,
+        .comment {
+          background: none;
+          border: none;
+          display: flex;
+          align-items: flex-end;
+          gap: 5px;
+          font-size: var(--font-size-small-base);
+          font-weight: 600;
+          color: var(--black);
+        }
+
+        button {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--index);
+
+    width: 55%;
+
+    .inner__properties {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      div {
+        border: 2px solid var(--black);
+        border-radius: 12px;
+        padding: 10px 12px;
+        font-weight: 600;
+        color: var(--black);
+      }
+    }
+
+    .description{
+      line-height: 150%;
+    }
+
+
+    .createdDate{
+      color:#707070;
+    }
+  }
+}

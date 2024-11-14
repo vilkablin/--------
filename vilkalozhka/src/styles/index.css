@@ -1,0 +1,83 @@
+@charset "UTF-8";
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Involve";
+}
+
+@font-face {
+  font-family: "Involve";
+  src: url(../assets/fonts/Involve-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve";
+  src: url(../assets/fonts/Involve-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve";
+  src: url(../assets/fonts/Involve-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve";
+  src: url(../assets/fonts/Involve-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve";
+  src: url(../assets/fonts/Involve-BoldOblique.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Involve";
+  src: url(../assets/fonts/Involve-SemiBoldOblique.ttf);
+  font-weight: 600;
+  font-style: italic;
+}
+:root {
+  --orange: #ff7425;
+  --black: #0f0e0e;
+  --index: calc(1vw + 1vh);
+  --font-size-base: calc(var(--index) + 0.2rem);
+  --font-size-small-base: calc(0.3rem + 1vw);
+  --font-size-large: calc(1.5rem + 1.8vw);
+  --font-size-medium: calc(1rem + 2vw);
+  --font-size-small: сalc(1rem + 1.25vw);
+}
+
+p {
+  font-size: var(--font-size-small-base);
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+  color: var(--orange);
+}
+h2 span {
+  color: var(--black);
+  font-style: italic;
+}
+
+h3 {
+  font-size: calc(var(--font-size-medium) / 1.5);
+}
+
+h4 {
+  font-size: calc(var(--font-size-medium) / 2.2);
+}

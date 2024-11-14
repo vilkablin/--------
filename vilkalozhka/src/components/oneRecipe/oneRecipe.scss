@@ -1,0 +1,11 @@
+.stagesAndIngredients{
+  display: flex;
+  padding: 60px 24px;
+  height: auto;
+  justify-content: space-between;
+  position: relative;
+}
+
+.image.active .stagesAndIngredients{
+  position: static;
+}

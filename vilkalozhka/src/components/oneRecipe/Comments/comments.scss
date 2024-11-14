@@ -1,0 +1,106 @@
+.comments {
+  padding: 60px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+
+  .comments__inner {
+    display: flex;
+    justify-content: space-between;
+
+    .createComment {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: var(--index);
+
+      form {
+        display: flex;
+        width: 100%;
+        input {
+          width: 90%;
+          background: #f6f6f6;
+          border-radius: 20px 0 0 20px;
+          padding: 20px;
+          border: none;
+          font-size: calc(var(--font-size-small-base)/1.1);
+          color: var(--black);
+          
+        }
+        :focus{
+          outline: #707070 2px solid;
+        }
+
+        ::placeholder{
+          font-size: calc(var(--font-size-small-base)/1.1);
+        }
+
+        button{
+          width: 15%;
+          border-radius: 0 20px 20px 0;
+          background: var(--orange);
+          border: none;
+          outline: none;
+          cursor: pointer;
+          
+          svg{
+            transition: .4s;
+          }
+          :hover{
+              transform: scale(1.1);
+          }
+        }
+      }
+    } 
+
+    .comments__items {
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--index) *2.4);
+
+      .comments__item{
+        display: flex;
+        flex-direction: column;
+        gap: var(--index);
+        p{
+          font-size: var(--font-size-small-base);
+        }
+      }
+
+    }
+
+    .profile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+
+      .profile__info {
+        display: flex;
+        align-items: center;
+        gap: var(--index);
+        width: auto;
+        flex-direction: row;
+
+        h4 {
+          font-weight: 500;
+        }
+
+        .image {
+          width: calc(var(--index) * 2);
+          height: calc(var(--index) * 2);
+          background: #d9d9d9;
+          border-radius: 50%;
+        }
+      }
+
+      .createdAt {
+        font-weight: 400;
+        font-size: calc(var(--font-size-small));
+        color: #707070;
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.adminPanel {
+  padding: 60px 24px;
+  display: flex;
+  justify-content: space-between;
+
+  .asideMenu {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 40px;
+    background: var(--black);
+    gap: calc(var(--index) * 2);
+
+    .adminInfo {
+      display: flex;
+      flex-direction: column;
+      gap: var(--index);
+      p {
+        color: #fff;
+      }
+      .profile {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: var(--index);
+
+        p {
+          font-weight: 600;
+          font-size: var(--font-size-base);
+          color: #fff;
+        }
+
+        .imgWrapper {
+          width: 90px;
+          height:90px;
+          overflow: hidden;
+          border-radius: 50%;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .btns {
+      display: flex;
+      flex-direction: column;
+      gap: var(--index);
+
+      button {
+        border: 2px solid #fff;
+        border-radius: 16px;
+        padding: 14px 30px;
+        background: none;
+        color: #fff;
+        font-size: var(--font-size-small-base);
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      button:hover,
+      button.active {
+        background: #fff;
+        color: var(--black);
+      }
+    }
+  }
+
+  .usersList {
+    width: 70%;
+    flex-direction: column;
+    gap: var(--index);
+
+    .users__title {
+      width: 100%;
+      background: var(--orange);
+      border-radius: 20px;
+      padding: 16px 20px;
+      display: grid;
+      grid-template-columns:1fr 3fr 3fr 2fr 2fr 2fr 1fr;
+
+      div {
+        font-weight: 600;
+        font-size: var(--font-size-small);
+        color: #fff;
+      }
+    }
+
+    .userItem {
+      display: grid;
+      grid-template-columns:1fr 3fr 3fr 2fr 2fr 2fr 1fr;
+      padding: 10px 20px;
+
+      button{
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  .cards{
+    width: 70%;
+     
+    .card{
+      width: 30%;
+    }
+  }
+}
