@@ -106,3 +106,927 @@
 [14-Nov-2024 20:27:46 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/vilkalozhka-api/actions/user/getUserInfo.php on line 21
 [14-Nov-2024 20:27:46 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/vilkalozhka-api/actions/user/getUserInfo.php on line 21
 [14-Nov-2024 20:29:08 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/vilkalozhka-api/actions/user/getUserInfo.php on line 21
+[15-Nov-2024 00:25:45 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/Курсовая/vilkalozhka-api/actions/user/getUserInfo.php on line 28
+[15-Nov-2024 00:32:20 UTC] Raw input: {"username":"vilka","password":"1234"}
+[15-Nov-2024 00:32:20 UTC] Headers received: Array
+(
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+    [Sec-Ch-Ua-Platform] => "macOS"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:32:20 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/Курсовая/vilkalozhka-api/actions/user/getUserInfo.php on line 30
+[15-Nov-2024 00:32:20 UTC] Headers received: Array
+(
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+    [Sec-Ch-Ua-Platform] => "macOS"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:32:20 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/Курсовая/vilkalozhka-api/actions/user/getUserInfo.php on line 30
+[15-Nov-2024 00:32:34 UTC] Headers received: Array
+(
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:32:34 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/Курсовая/vilkalozhka-api/actions/user/getUserInfo.php on line 30
+[15-Nov-2024 00:32:34 UTC] Headers received: Array
+(
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:32:34 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/Курсовая/vilkalozhka-api/actions/user/getUserInfo.php on line 30
+[15-Nov-2024 00:47:14 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:47:14 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:47:14 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/Курсовая/vilkalozhka-api/actions/user/getUserInfo.php on line 33
+[15-Nov-2024 00:47:33 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:47:33 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:47:33 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/Курсовая/vilkalozhka-api/actions/user/getUserInfo.php on line 33
+[15-Nov-2024 00:47:36 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:47:36 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:47:36 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/Курсовая/vilkalozhka-api/actions/user/getUserInfo.php on line 33
+[15-Nov-2024 00:47:36 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:47:36 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:47:36 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/Курсовая/vilkalozhka-api/actions/user/getUserInfo.php on line 33
+[15-Nov-2024 00:48:30 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:48:30 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:48:30 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/Курсовая/vilkalozhka-api/actions/user/getUserInfo.php on line 30
+[15-Nov-2024 00:48:30 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:48:30 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:48:30 UTC] PHP Warning:  Undefined array key "Authorization" in /Applications/MAMP/htdocs/Курсовая/vilkalozhka-api/actions/user/getUserInfo.php on line 30
+[15-Nov-2024 00:49:00 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:49:00 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:49:00 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:49:00 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:50:37 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:50:37 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:50:37 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:50:37 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:51:38 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:51:38 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:51:40 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:51:40 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:51:40 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:51:40 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:52:22 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:52:22 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:52:22 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:52:22 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:52:52 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:52:52 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:52:52 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:52:52 UTC] Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:53:24 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 00:53:24 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 01:06:09 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 01:06:09 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 01:08:18 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 01:08:18 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+

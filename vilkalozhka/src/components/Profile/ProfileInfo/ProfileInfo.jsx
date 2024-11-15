@@ -5,7 +5,6 @@ import profile2 from "../../../assets/images/others/profile2.jpeg";
 import { useState, useEffect, useRef, useContext } from "react";
 import { AuthContext } from "../../../context/AuthContext";
 
-
 const info = {
   name: "Vilka_blin",
   image: profileImage,
@@ -62,37 +61,36 @@ const followers = [
   },
 ];
 
-
 const ProfileInfo = () => {
   const { isAuthenticated } = useContext(AuthContext);
   const [profile, setProfile] = useState(null);
   const [isOpenFollowers, setIsOpenFollowers] = useState(false);
   const [isOpenSubscribes, setIsOpenSubscribes] = useState(false);
-    const ref = useRef();
-
+  const ref = useRef();
 
   useEffect(() => {
     const fetchProfileData = async () => {
       try {
-
         const token = localStorage.getItem("token");
         if (!token) {
           console.error("Токен отсутствует");
           return;
         }
-        
+
         const response = await fetch(
           "http://localhost:8888/vilkalozhka-api/actions/user/getUserInfo.php",
           {
-            method: "GET", // Метод запроса
+            method: "GET",
             headers: {
-               'Authorization': `Bearer ${token}`, 
-              "Content-Type": "application/json", 
-              
+              Authorization: "Bearer c2e7ba316454f4efa991e260a6a8077c",
+              "Content-Type": "application/json",
             },
-            credentials: "include"
+              mode: 'cors'
           }
-        );
+        )
+          .then((response) => response.json())
+          .then((data) => console.log(data))
+          .catch((error) => console.error("Error:", error));
 
         const data = await response.json();
 
@@ -130,23 +128,23 @@ const ProfileInfo = () => {
   };
 
   const onClickButtonOpenSubscribesHandle = () => {
-    if(isOpenSubscribes) {
+    if (isOpenSubscribes) {
       return;
     }
 
-    ref.current.style.overflow = 'hidden';
-    setIsOpenSubscribes(true)
-  }
+    ref.current.style.overflow = "hidden";
+    setIsOpenSubscribes(true);
+  };
 
   const onClickButtonCloseSubscribesHandle = () => {
-    if(!isOpenSubscribes){
+    if (!isOpenSubscribes) {
       return;
     }
 
-    ref.current.style.overflow = '';
+    ref.current.style.overflow = "";
 
     setIsOpenSubscribes(false);
-  }
+  };
 
   useEffect(() => {
     ref.current = document.body;
@@ -256,9 +254,7 @@ const ProfileInfo = () => {
               <div className="subscribes__inner">
                 <div className="header">
                   <h4>Список подпиcчиков {info.name}</h4>
-                  <button
-                    onClick={onClickButtonCloseFollowersHandle}
-                  >
+                  <button onClick={onClickButtonCloseFollowersHandle}>
                     <svg
                       width="30"
                       height="30"
