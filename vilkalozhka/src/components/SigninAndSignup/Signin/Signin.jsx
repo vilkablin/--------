@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Container from "../../Сontainer/Сontainer";
 import "../Signin.scss";
 import { Link, useNavigate } from "react-router-dom";
+import AuthService from "../../../services/AuthService";
 
 const Signin = () => {
   const [username, setUsername] = useState("");
@@ -12,21 +13,10 @@ const Signin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(
-        "http://localhost:8888/vilkalozhka-api/actions/user/signin.php",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            username,
-            password,
-          }),
-        }
-      );
-
-      const data = await response.json();
+      const [response, data] = await AuthService.signin({
+        username: username,
+        password: password,
+      });
 
       if (response.status === 401) {
         setError("Неверные учетные данные");
@@ -39,9 +29,8 @@ const Signin = () => {
       }
 
       const token = data.data.token;
-      localStorage.setItem('token' ,token);
-      navigate('/profile');
-
+      localStorage.setItem("token", token);
+      navigate("/profile");
     } catch (error) {
       setError("Ошибка при подключении к серверу");
     }

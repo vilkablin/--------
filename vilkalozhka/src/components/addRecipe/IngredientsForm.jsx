@@ -1,16 +1,18 @@
 import { useState } from "react";
 
-const IngredientsForm = () => {
-  const [ingredients, setIngredients] = useState([""]);
 
-  const handleIngredientChange = (index, value) => {
-    const newIngredients = [...ingredients];
-    newIngredients[index] = value;
-    setIngredients(newIngredients);
-  };
+const IngredientsForm = ({ updateIngredients }) => {
+  const [ingredient, setIngredient] = useState('');
+  const [ingredientsList, setIngredientsList] = useState([]);
 
-  const addIngredientField = () => {
-    setIngredients([...ingredients, ""]);
+  const handleAddIngredient = () => {
+    if (ingredient.trim() !== '') {
+      const updatedList = [...ingredientsList, ingredient];
+      setIngredientsList(updatedList);
+      setIngredient('');
+
+      updateIngredients(updatedList);
+    }
   };
 
   return (
@@ -54,7 +56,7 @@ const IngredientsForm = () => {
           </div>
         ))}
 
-        <button onClick={addIngredientField}>
+        <button onClick={handleAddIngredient}>
           <svg
             width="28"
             height="28"

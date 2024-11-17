@@ -23,21 +23,34 @@ const RecepiesSlider = () => {
         <Swiper
           modules={[ Scrollbar]}
           spaceBetween={24}
-          slidesPerView={4}
+          breakpoints={{
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            // when window width is >= 480px
+            680: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            900:{
+              slidesPerView: 4,
+              spaceBetween: 40
+            }
+          }}
           scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
           className="recipes"
         >
           {slides}
-          {/* <SwiperSlide>1111</SwiperSlide>
-          <SwiperSlide>222</SwiperSlide> */}
+        
+
           
         </Swiper>
         </div>
-        {/* <div className="slider__items">
-          <Card />
-        </div> */}
+
       </div>
     </Container>
   );

@@ -1030,3 +1030,130 @@
     [Host] => localhost:8888
 )
 
+[15-Nov-2024 11:40:32 UTC] Raw input: {"username":"violetta","email":"viola@mail.ru","password":"1234","password_r":"1234"}
+[15-Nov-2024 11:40:32 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+    [Sec-Ch-Ua-Platform] => "macOS"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 11:40:32 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+    [Sec-Ch-Ua-Platform] => "macOS"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 14:06:30 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+    [Sec-Ch-Ua-Platform] => "macOS"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 14:06:30 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?0
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+    [Sec-Ch-Ua-Platform] => "macOS"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 14:07:13 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+
+[15-Nov-2024 14:07:13 UTC] Headers received: Array
+(
+    [Sec-Gpc] => 1
+    [Dnt] => 1
+    [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Referer] => http://localhost:5173/
+    [Sec-Fetch-Dest] => empty
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Site] => same-site
+    [Origin] => http://localhost:5173
+    [Accept] => */*
+    [Sec-Ch-Ua-Mobile] => ?1
+    [Content-Type] => application/json
+    [Sec-Ch-Ua] => "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+    [User-Agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36
+    [Sec-Ch-Ua-Platform] => "Android"
+    [Connection] => keep-alive
+    [Host] => localhost:8888
+)
+

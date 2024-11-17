@@ -13,6 +13,17 @@ overflow: hidden;
   padding-top: 60px;
   padding-bottom: 12px;
   animation: scroll 16s linear infinite;
+  @media screen and (max-width: 900px) {
+    padding-top: 30px;
+  }
+
+  img{
+    width: 50%;
+
+    @media screen and (max-width: 900px) {
+      width: 25%;
+    }
+  }
 }
 
 .bottom {
@@ -23,6 +34,19 @@ overflow: hidden;
   padding-top: 12px;
   padding-bottom: 60px;
   animation: reversescroll 16s linear infinite;
+
+  @media screen and (max-width: 900px) {
+    padding-bottom: 30px;
+  }
+
+  img{
+    width: 50%;
+
+    @media screen and (max-width: 900px) {
+
+      width: 25%;
+    }
+  }
 }
 
 @keyframes scroll {
@@ -42,3 +66,5 @@ overflow: hidden;
     transform: translateX(0);
   }
 }
+
+

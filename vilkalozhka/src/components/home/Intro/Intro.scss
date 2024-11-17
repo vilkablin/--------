@@ -321,6 +321,7 @@
 
 @media screen and (max-width: 1000px) {
   .intro__inner {
+    padding: 40px 24px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 10em 14em 14em 24em 10em;
     gap: 20px;

@@ -1,8 +1,22 @@
 import "../addRecipe/addRecipe.scss";
 import React, { useState } from "react";
 
-const StagesForm = ({ form, onChangeInputHandle }) => {
-  const [steps, setSteps] = useState([{ description: "", image: null }]);
+const StagesForm = ({ updateStages }) => {
+  const [stage, setStage] = useState('');
+  const [stagesList, setStagesList] = useState([]);
+
+  const handleAddStage = () => {
+    if (stage.trim() !== '') {
+      const updatedList = [...stagesList, stage];
+      setStagesList(updatedList);
+      setStage('');
+
+      
+      updateStages(updatedList);
+    }
+  };
+
+  
 
   const handleDescriptionChange = (index, value) => {
     const newSteps = [...steps];
@@ -87,7 +101,7 @@ const StagesForm = ({ form, onChangeInputHandle }) => {
                   type="file"
                   name="mainImage"
                   id="imageInput"
-                  onChange={(e) => onChangeInputHandle(e)}
+                  onChange={(e) => onChangeInputHandle(e.target.value)}
                 />
                 <label htmlFor="imageInput" className="imageButton">
                   <svg
@@ -108,7 +122,7 @@ const StagesForm = ({ form, onChangeInputHandle }) => {
             </div>
           </div>
         ))}
-        <button onClick={addStep}>
+        <button onClick={handleAddStage}>
           <svg
             width="28"
             height="28"

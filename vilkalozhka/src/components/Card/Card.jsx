@@ -7,7 +7,6 @@ const Card = () => {
     background: `url(${img1}) 50% 50% no-repeat`,
     position: "relative",
     overflow: "hidden",
-    borderRadius: "30px",
   };
   return (
     

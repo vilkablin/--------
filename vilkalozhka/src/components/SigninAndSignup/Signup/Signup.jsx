@@ -1,56 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Container from "../../Сontainer/Сontainer";
-import '../Signin.scss';
+import "../Signin.scss";
 import { Link, useNavigate } from "react-router-dom";
+import AuthService from "../../../services/AuthService";
 
 const Signup = () => {
-  const [username, setUsername] = useState('');
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [password_r, setPassword_r] = useState('');
-  const [error, setError] = useState('');
+
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [password_r, setPassword_r] = useState("");
+
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     if (password !== password_r) {
-      setError('Пароли не совпадают');
+      setError("Пароли отличаются");
+
       return;
     }
-  
+
     try {
-      const response = await fetch('http://localhost:8888/vilkalozhka-api/actions/user/signup.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          username,
-          email,
-          password,
-          password_r,
-        }),
+      const [response, data] = await AuthService.signup({
+        username: username,
+        password: password,
+        confirmed_password: password_r,
+        email: email,
       });
-    
-      const data = await response.json();
-    
 
       if (!response.ok) {
-        setError(data.message); 
-        return;
-      } 
-  
-      const token = data.data.token;
-      localStorage.setItem('token' ,token);
-      navigate('/profile');
-      
+        return setError(data.message);
+      }
+
+      localStorage.setItem("token", data.data.token);
+
+      navigate("/profile");
     } catch (error) {
-      setError('Ошибка при регистрации');
+      setError("Ошибка при регистрации");
     }
-    
   };
-  
 
   return (
     <Container>
@@ -58,8 +49,10 @@ const Signup = () => {
         <div className="signin__form">
           <h2>Регистрация</h2>
           {error && <p className="error">{error}</p>}
-          <form onSubmit={handleSubmit} method='POST'>
-            <label htmlFor="username">Введите имя пользователя (Должно быть уникальным) <span>*</span> </label>
+          <form onSubmit={handleSubmit} method="POST">
+            <label htmlFor="username">
+              Введите имя пользователя (Должно быть уникальным) <span>*</span>{" "}
+            </label>
             <input
               type="text"
               id="username"
@@ -68,7 +61,9 @@ const Signup = () => {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
-            <label htmlFor="email">Введите ваш email <span>*</span> </label>
+            <label htmlFor="email">
+              Введите ваш email <span>*</span>{" "}
+            </label>
             <input
               type="text"
               id="email"
@@ -77,7 +72,9 @@ const Signup = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <label htmlFor="password">Введите пароль <span>*</span> </label>
+            <label htmlFor="password">
+              Введите пароль <span>*</span>{" "}
+            </label>
             <input
               type="password"
               id="password"
@@ -86,7 +83,9 @@ const Signup = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <label htmlFor="password_r">Повторите пароль <span>*</span> </label>
+            <label htmlFor="password_r">
+              Повторите пароль <span>*</span>{" "}
+            </label>
             <input
               type="password"
               id="password_r"
@@ -97,7 +96,9 @@ const Signup = () => {
             />
             <button type="submit">Зарегистрироваться</button>
           </form>
-          <p>Уже есть аккаунт? <Link to='/signin'>Войти</Link></p>
+          <p>
+            Уже есть аккаунт? <Link to="/signin">Войти</Link>
+          </p>
         </div>
       </div>
     </Container>

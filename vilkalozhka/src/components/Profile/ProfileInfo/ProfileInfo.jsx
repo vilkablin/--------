@@ -68,44 +68,44 @@ const ProfileInfo = () => {
   const [isOpenSubscribes, setIsOpenSubscribes] = useState(false);
   const ref = useRef();
 
-  useEffect(() => {
-    const fetchProfileData = async () => {
-      try {
-        const token = localStorage.getItem("token");
-        if (!token) {
-          console.error("Токен отсутствует");
-          return;
-        }
+  // useEffect(() => {
+  //   const fetchProfileData = async () => {
+  //     try {
+  //       const token = localStorage.getItem("token");
+  //       if (!token) {
+  //         console.error("Токен отсутствует");
+  //         return;
+  //       }
 
-        const response = await fetch(
-          "http://localhost:8888/vilkalozhka-api/actions/user/getUserInfo.php",
-          {
-            method: "GET",
-            headers: {
-              Authorization: "Bearer c2e7ba316454f4efa991e260a6a8077c",
-              "Content-Type": "application/json",
-            },
-              mode: 'cors'
-          }
-        )
-          .then((response) => response.json())
-          .then((data) => console.log(data))
-          .catch((error) => console.error("Error:", error));
+  //       const response = await fetch(
+  //         "http://localhost:8888/vilkalozhka-api/actions/user/getUserInfo.php",
+  //         {
+  //           method: "GET",
+  //           headers: {
+  //             Authorization: "Bearer c2e7ba316454f4efa991e260a6a8077c",
+  //             "Content-Type": "application/json",
+  //           },
+  //             mode: 'cors'
+  //         }
+  //       )
+  //         .then((response) => response.json())
+  //         .then((data) => console.log(data))
+  //         .catch((error) => console.error("Error:", error));
 
-        const data = await response.json();
+  //       const data = await response.json();
 
-        setProfile(data);
-      } catch (error) {
-        console.error("Ошибка при загрузке данных профиля:", error);
-      }
-    };
+  //       setProfile(data);
+  //     } catch (error) {
+  //       console.error("Ошибка при загрузке данных профиля:", error);
+  //     }
+  //   };
 
-    fetchProfileData();
-  }, [isAuthenticated]);
+  //   fetchProfileData();
+  // }, [isAuthenticated]);
 
-  if (!profile) {
-    return <div>Загрузка...</div>;
-  }
+  // if (!profile) {
+  //   return <div>Загрузка...</div>;
+  // }
 
   const onClickButtonOpenFollowersHandle = () => {
     if (isOpenFollowers) {

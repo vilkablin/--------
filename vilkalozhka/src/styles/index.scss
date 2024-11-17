@@ -7,7 +7,7 @@
   transition: 0.4s;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: 'Involve';
+  font-family: "Involve";
 }
 
 @font-face {
@@ -60,35 +60,45 @@
 }
 
 :root {
-	--orange: #ff7425;
-	--black: #0f0e0e;
+  --orange: #ff7425;
+  --black: #0f0e0e;
   --index: calc(1vw + 1vh);
-  --font-size-base: calc(var(--index) + 0.2rem); 
+  --font-size-base: calc(var(--index) + 0.2rem);
   --font-size-small-base: calc(0.3rem + 1vw);
-  --font-size-large: calc(1.5rem + 1.8vw); 
-  --font-size-medium: calc(1rem + 2vw); 
+  --font-size-large: calc(1.5rem + 1.8vw);
+  --font-size-medium: calc(1rem + 2vw);
   --font-size-small: сalc(1rem + 1.25vw);
 }
 
-
-p{
-font-size: var(--font-size-small-base);
+p {
+  font-size: var(--font-size-small-base);
 }
 
-h2{
+h2 {
   font-size: var(--font-size-medium);
-  color:var(--orange);
+  color: var(--orange);
 
-  span{
+  span {
     color: var(--black);
     font-style: italic;
   }
 }
 
-h3{
-  font-size: calc(var(--font-size-medium) /1.5);
+h3 {
+  font-size: calc(var(--font-size-medium) / 1.5);
 }
 
-h4{
-  font-size: calc(var(--font-size-medium) /2.2);
+h4 {
+  font-size: calc(var(--font-size-medium) / 2.2);
+}
+
+@media screen and (max-width: 900px) {
+
+  h3 {
+    font-size: calc(var(--font-size-medium) / 1.2);
+  }
+
+  h4 {
+    font-size: calc(var(--font-size-medium) / 1.3);
+  }
 }
