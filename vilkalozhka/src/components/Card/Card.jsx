@@ -1,18 +1,16 @@
 import img1 from "../../assets/images/recepies/image.png";
 import { Link } from "react-router-dom";
-import '../Card/card.scss';
+import "../Card/card.scss";
 
-const Card = () => {
+const RecipeCard = ({ item }) => {
   const mystyle = {
-    background: `url(${img1}) 50% 50% no-repeat`,
+    background: `url(${item.photo_url}) 50% 50% no-repeat`,
     position: "relative",
     overflow: "hidden",
   };
   return (
-    
     <div className="card" style={mystyle}>
-   
-      <Link className="arrow" to="/product">
+      <Link className="arrow" to={`/recipes/${item.recipe_id}`}>
         <svg
           width="39"
           height="39"
@@ -49,13 +47,15 @@ const Card = () => {
           </defs>
         </svg>
         <p>
-          <span>20</span> минут
+          <span>{item.cooking_time}</span> минут
         </p>
       </div>
       <div className="card__info">
-        <h4>Паста с индейкой и сливками</h4>
+        <h4>{item.title}</h4>
         <div className="info__items">
-          <p><span>Автор:</span> povar_induk</p>
+          <Link to={`/users/${item.user.user_id}`}>
+            Автор: {item.user.username}
+          </Link>
           <div className="btns">
             <form action="/">
               <input type="hidden" name="recepie_id" />
@@ -71,8 +71,8 @@ const Card = () => {
                     d="M17.6724 0.640259C15.5941 0.640259 13.7497 1.51254 12.5 3.0118C11.2503 1.51254 9.40586 0.640259 7.32759 0.640259C5.51747 0.642588 3.78212 1.40821 2.50217 2.76919C1.22223 4.13016 0.50219 5.97537 0.5 7.90009C0.5 15.8573 11.4459 22.2151 11.9114 22.4824C12.0923 22.586 12.2945 22.6403 12.5 22.6403C12.7055 22.6403 12.9077 22.586 13.0886 22.4824C13.5541 22.2151 24.5 15.8573 24.5 7.90009C24.4978 5.97537 23.7778 4.13016 22.4978 2.76919C21.2179 1.40821 19.4825 0.642588 17.6724 0.640259ZM17.1045 16.2995C15.6637 17.5995 14.1236 18.7695 12.5 19.7974C10.8764 18.7695 9.33628 17.5995 7.89552 16.2995C5.65379 14.2546 2.98276 11.1362 2.98276 7.90009C2.98276 6.67481 3.44052 5.49973 4.25533 4.63333C5.07014 3.76693 6.17527 3.2802 7.32759 3.2802C9.16897 3.2802 10.7103 4.31417 11.3507 5.97953C11.4439 6.2223 11.603 6.43006 11.8077 6.5763C12.0124 6.72254 12.2534 6.80064 12.5 6.80064C12.7466 6.80064 12.9876 6.72254 13.1923 6.5763C13.397 6.43006 13.5561 6.2223 13.6493 5.97953C14.2897 4.31417 15.831 3.2802 17.6724 3.2802C18.8247 3.2802 19.9299 3.76693 20.7447 4.63333C21.5595 5.49973 22.0172 6.67481 22.0172 7.90009C22.0172 11.1362 19.3462 14.2546 17.1045 16.2995Z"
                     fill="white"
                   />
-                </svg>{" "}
-                324{" "}
+                </svg>
+                <span>{item.statistics.likes}</span>
               </button>
             </form>
             <div className="comment">
@@ -91,7 +91,7 @@ const Card = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              <p>3</p>
+              <span>{item.statistics.comments}</span>
             </div>
           </div>
         </div>
@@ -100,4 +100,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default RecipeCard;

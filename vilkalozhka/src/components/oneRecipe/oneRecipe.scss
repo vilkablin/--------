@@ -1,4 +1,4 @@
-.stagesAndIngredients{
+.stagesAndIngredients {
   display: flex;
   padding: 60px 24px;
   height: auto;
@@ -6,6 +6,12 @@
   position: relative;
 }
 
-.image.active .stagesAndIngredients{
+.image.active .stagesAndIngredients {
   position: static;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
 }

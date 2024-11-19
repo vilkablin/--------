@@ -1,18 +1,28 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Container from "../../Сontainer/Сontainer";
 import "../Signin.scss";
 import { Link, useNavigate } from "react-router-dom";
 import AuthService from "../../../services/AuthService";
+import { AuthContext } from "../../../context/AuthContext";
 
 const Signup = () => {
+  const { isAuthenticated, login } = useContext(AuthContext);
+
   const navigate = useNavigate();
 
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [password_r, setPassword_r] = useState("");
-
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      return;
+    }
+
+    navigate("/profile");
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,7 +37,7 @@ const Signup = () => {
       const [response, data] = await AuthService.signup({
         username: username,
         password: password,
-        confirmed_password: password_r,
+        password_confirmation: password_r,
         email: email,
       });
 
@@ -35,7 +45,7 @@ const Signup = () => {
         return setError(data.message);
       }
 
-      localStorage.setItem("token", data.data.token);
+      login(data.data.token);
 
       navigate("/profile");
     } catch (error) {

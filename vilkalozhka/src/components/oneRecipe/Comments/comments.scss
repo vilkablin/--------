@@ -3,72 +3,71 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 100%;
+  // width: 100%;
 
   .comments__inner {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
     .createComment {
-      width: 40%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       gap: var(--index);
 
       form {
         display: flex;
-        width: 100%;
+
         input {
-          width: 90%;
+          width: 100%;
           background: #f6f6f6;
           border-radius: 20px 0 0 20px;
           padding: 20px;
           border: none;
-          font-size: calc(var(--font-size-small-base)/1.1);
+          font-size: calc(var(--font-size-small-base) / 1.1);
           color: var(--black);
-          
         }
-        :focus{
+        :focus {
           outline: #707070 2px solid;
         }
 
-        ::placeholder{
-          font-size: calc(var(--font-size-small-base)/1.1);
+        ::placeholder {
+          font-size: calc(var(--font-size-small-base) / 1.1);
         }
 
-        button{
-          width: 15%;
+        button {
+          // width: 15%;
           border-radius: 0 20px 20px 0;
           background: var(--orange);
           border: none;
           outline: none;
           cursor: pointer;
-          
-          svg{
-            transition: .4s;
+
+          svg {
+            transition: 0.4s;
           }
-          :hover{
-              transform: scale(1.1);
+          :hover {
+            transform: scale(1.1);
           }
         }
       }
-    } 
+    }
 
     .comments__items {
-      width: 55%;
       display: flex;
       flex-direction: column;
-      gap: calc(var(--index) *2.4);
+      gap: calc(var(--index) * 2.4);
 
-      .comments__item{
+      .comments__item {
         display: flex;
         flex-direction: column;
         gap: var(--index);
-        p{
+        
+        p {
           font-size: var(--font-size-small-base);
         }
       }
-
     }
 
     .profile {

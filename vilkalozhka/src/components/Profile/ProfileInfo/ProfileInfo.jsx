@@ -2,110 +2,13 @@ import Container from "../../Сontainer/Сontainer";
 import "../ProfileInfo/profileInfo.scss";
 import profileImage from "../../../assets/images/others/profile.png";
 import profile2 from "../../../assets/images/others/profile2.jpeg";
-import { useState, useEffect, useRef, useContext } from "react";
-import { AuthContext } from "../../../context/AuthContext";
+import { useState, useEffect, useRef, useContext, useCallback } from "react";
 
-const info = {
-  name: "Vilka_blin",
-  image: profileImage,
-  description: "люблю готовить и вкусно поесть",
-  recipes_count: 4,
-  followers: 68,
-  subscribes: 35,
-  likes: 10,
-};
-
-const subscribes = [
-  {
-    id: 1,
-    name: "vilka_neblin",
-    img: profile2,
-  },
-  {
-    id: 2,
-    name: "dlinnoe_nazvanie_ochen1234",
-    img: profile2,
-  },
-  {
-    id: 3,
-    name: "vilka_neblin",
-    img: profileImage,
-  },
-  {
-    id: 4,
-    name: "vilka_neblin",
-    img: profile2,
-  },
-];
-
-const followers = [
-  {
-    id: 1,
-    name: "vilka_neblin",
-    img: profile2,
-  },
-  {
-    id: 2,
-    name: "dlinnoe_nazvanie_ochen1234",
-    img: profile2,
-  },
-  {
-    id: 3,
-    name: "vilka_neblin",
-    img: profileImage,
-  },
-  {
-    id: 4,
-    name: "vilka_neblin",
-    img: profile2,
-  },
-];
-
-const ProfileInfo = () => {
-  const { isAuthenticated } = useContext(AuthContext);
-  const [profile, setProfile] = useState(null);
-  const [isOpenFollowers, setIsOpenFollowers] = useState(false);
-  const [isOpenSubscribes, setIsOpenSubscribes] = useState(false);
+const ProfileInfo = ({ user }) => {
   const ref = useRef();
 
-  // useEffect(() => {
-  //   const fetchProfileData = async () => {
-  //     try {
-  //       const token = localStorage.getItem("token");
-  //       if (!token) {
-  //         console.error("Токен отсутствует");
-  //         return;
-  //       }
-
-  //       const response = await fetch(
-  //         "http://localhost:8888/vilkalozhka-api/actions/user/getUserInfo.php",
-  //         {
-  //           method: "GET",
-  //           headers: {
-  //             Authorization: "Bearer c2e7ba316454f4efa991e260a6a8077c",
-  //             "Content-Type": "application/json",
-  //           },
-  //             mode: 'cors'
-  //         }
-  //       )
-  //         .then((response) => response.json())
-  //         .then((data) => console.log(data))
-  //         .catch((error) => console.error("Error:", error));
-
-  //       const data = await response.json();
-
-  //       setProfile(data);
-  //     } catch (error) {
-  //       console.error("Ошибка при загрузке данных профиля:", error);
-  //     }
-  //   };
-
-  //   fetchProfileData();
-  // }, [isAuthenticated]);
-
-  // if (!profile) {
-  //   return <div>Загрузка...</div>;
-  // }
+  const [isOpenFollowers, setIsOpenFollowers] = useState(false);
+  const [isOpenSubscribes, setIsOpenSubscribes] = useState(false);
 
   const onClickButtonOpenFollowersHandle = () => {
     if (isOpenFollowers) {
@@ -156,12 +59,12 @@ const ProfileInfo = () => {
     <Container>
       <div className="profile">
         <div className="profile__image">
-          <img src={info.image} alt="profile image" />
+          <img src={user.photo} alt="Изображение профиля" />
         </div>
         <div className="profile__info">
           <div className="profile__nickname">
-            <h3>{info.name}</h3>
-            <form action="" method="post">
+            <h3>{user.username}</h3>
+            {/* <form action="" method="post">
               <input type="hidden" name="userId" />
               <button>
                 <svg
@@ -178,28 +81,28 @@ const ProfileInfo = () => {
                 </svg>
                 Подписаться
               </button>
-            </form>
+            </form> */}
           </div>
           <div className="profile__statistics">
-            <p>Рецепты: {info.recipes_count}</p>
+            <p>Рецепты: {user.statistics.recipes}</p>
             <button
               className="statistics__btn"
               onClick={onClickButtonOpenFollowersHandle}
             >
-              Подписчики:{info.followers}
+              Подписчики:{user.statistics.followers}
             </button>
             <button
               className="statistics__btn"
               onClick={onClickButtonOpenSubscribesHandle}
             >
-              Подписки: {info.subscribes}
+              Подписки: {user.statistics.following}
             </button>
-            <p>Лайки: {info.likes}</p>
+            <p>Лайки: {user.statistics.likes}</p>
 
             <div className={`${isOpenSubscribes ? "active" : ""} subscribes`}>
               <div className="subscribes__inner">
                 <div className="header">
-                  <h4>Список подписок {info.name}</h4>
+                  <h4>Список подписок {user.username}</h4>
                   <button onClick={onClickButtonCloseSubscribesHandle}>
                     <svg
                       width="30"
@@ -219,7 +122,7 @@ const ProfileInfo = () => {
                 </div>
 
                 <div className="inner__info">
-                  {subscribes.map((item, index) => {
+                  {/* {subscribes.map((item, index) => {
                     return (
                       <div className="subscribes__item" key={index}>
                         <div className="subscribes__profile">
@@ -245,7 +148,7 @@ const ProfileInfo = () => {
                         </button>
                       </div>
                     );
-                  })}
+                  })} */}
                 </div>
               </div>
             </div>
@@ -253,7 +156,7 @@ const ProfileInfo = () => {
             <div className={`${isOpenFollowers ? "active" : ""} subscribes`}>
               <div className="subscribes__inner">
                 <div className="header">
-                  <h4>Список подпиcчиков {info.name}</h4>
+                  <h4>Список подпиcчиков {user.username}</h4>
                   <button onClick={onClickButtonCloseFollowersHandle}>
                     <svg
                       width="30"
@@ -273,7 +176,7 @@ const ProfileInfo = () => {
                 </div>
 
                 <div className="inner__info">
-                  {followers.map((item, index) => {
+                  {/* {followers.map((item, index) => {
                     return (
                       <div className="subscribes__item" key={index}>
                         <div className="subscribes__profile">
@@ -299,13 +202,13 @@ const ProfileInfo = () => {
                         </button>
                       </div>
                     );
-                  })}
+                  })} */}
                 </div>
               </div>
             </div>
           </div>
           <p>
-            <span>О себе: </span> {info.description}
+            <span>О себе: </span> {user.about ?? "Без информации о себе"}
           </p>
         </div>
       </div>

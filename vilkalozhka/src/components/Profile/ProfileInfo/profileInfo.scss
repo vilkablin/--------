@@ -65,7 +65,7 @@
       position: relative;
 
       .subscribes {
-       display: none;
+        display: none;
         position: fixed;
         width: 100%;
         height: 100%;
@@ -94,7 +94,7 @@
               font-size: var(--font-size-base);
             }
 
-            button{
+            button {
               cursor: pointer;
               border: none;
               background: none;
@@ -158,24 +158,26 @@
         }
       }
 
-      .subscribes.active{
-       display: flex;
+      .subscribes.active {
+        display: flex;
       }
 
-      p, .statistics__btn {
+      p,
+      .statistics__btn {
         font-weight: 700;
         color: #fff;
         position: relative;
       }
 
-      .statistics__btn{
+      .statistics__btn {
         background: none;
         border: none;
         font-size: var(--font-size-small-base);
         cursor: pointer;
       }
 
-      p:after, .statistics__btn:after {
+      p:after,
+      .statistics__btn:after {
         content: "";
         background: #fff;
         height: 100%;
@@ -191,6 +193,5 @@
         width: 0;
       }
     }
-    
   }
 }

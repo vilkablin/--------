@@ -1,0 +1,19 @@
+@import "loaders.css/src/animations/line-scale-pulse-out.scss";
+
+$primary-color: var(--orange);
+
+.loader-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.loader-layout .loader-active {
+  display: block;
+
+  & > .loader-inner > div {
+    background-color: var(--orange);
+  }
+}

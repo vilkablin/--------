@@ -1,4 +1,4 @@
-import Card from "../components/Card/Card";
+// import RecipeCard from "../components/Card/Card";
 import Container from "../components/Сontainer/Сontainer";
 
 const FavouritesPage = () => {
@@ -8,16 +8,6 @@ const FavouritesPage = () => {
   return (
     <Container>
       <h2 style={style}>Избранное</h2>
-
-      <div className="cards">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
     </Container>
   );
 };

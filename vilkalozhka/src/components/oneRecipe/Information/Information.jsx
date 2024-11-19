@@ -3,25 +3,25 @@ import recipeImage from "../../../assets/images/recepies/image.png";
 import Container from "../../Сontainer/Сontainer";
 import { Link } from "react-router-dom";
 
-const Information = () => {
+const Information = ({ item }) => {
   return (
     <Container>
       <div className="bread-crumbs">
         <Link to="/">Главная /</Link>
-        <Link to="/">Рецепты /</Link>
-        <Link to="/">Пасты /</Link>
-        <Link to="/" className="active">
-          Паста с индейкой и сливками
+        <Link to="/recipes">Рецепты /</Link>
+        <Link to="#" className="active">
+          {item.title}
         </Link>
       </div>
 
       <div className="recipeInformation">
         <div className="image">
-          <img src={recipeImage} alt="recipe image" />
+          <img src={item.photo_url} alt="recipe image" />
           <div className="bottom__info">
-            <p>
-              <span>Автор: </span>vilka_na_lozhke
-            </p>
+            <Link to={`/users/${item.user.user_id}`}>
+              Автор: {item.user.username}
+            </Link>
+
             <div className="statistics">
               <form action="/">
                 <input type="hidden" name="recepie_id" />
@@ -38,7 +38,7 @@ const Information = () => {
                       fill="black"
                     />
                   </svg>
-                  324{" "}
+                  <span>{item.statistics.likes}</span>
                 </button>
               </form>
               <div className="comment">
@@ -57,32 +57,20 @@ const Information = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <p>3</p>
+                <span>{item.statistics.comments}</span>
               </div>
             </div>
           </div>
         </div>
         <div className="recipeInformation__inner">
-          <h2>Паста с индейкой и сливками</h2>
+          <h2>{item.title}</h2>
           <div className="inner__properties">
-            <div>Время приготовления: 20 минут</div>
-            <div>Сложность: легкий</div>
-            <div>Количество порций: 4</div>
+            <div>Время приготовления: {item.cooking_time} минут</div>
+            <div>Сложность: {item.complexity}</div>
+            <div>Количество порций: {item.number_of_servings}</div>
           </div>
-          <p className="description">
-            Эта паста с индейкой и сливками - настоящая находка для тех, кто
-            любит нежные и сливочные блюда. Нежное филе индейки, тонко
-            нарезанное кубиками, обжаривается до золотистой корочки и
-            соединяется с ароматным соусом на основе сливок, чеснока и лука.
-            Соус, густой и насыщенный, обволакивает каждую ложечку пасты, делая
-            ее еще более нежной и вкусной. Свежая зелень петрушки, посыпанная
-            поверх блюда, добавляет легкости и свежести. Это блюдо идеально
-            подходит для ужина в кругу семьи или романтического ужина на двоих.
-            Оно не требует много времени на приготовление, но при этом выглядит
-            и вкусно, и аппетитно.
-          </p>
-
-          <div className="createdDate">18.09.2024 20:46</div>
+          <p className="description">{item.description}</p>
+          <div className="createdDate">{item.created_at}</div>
         </div>
       </div>
     </Container>
