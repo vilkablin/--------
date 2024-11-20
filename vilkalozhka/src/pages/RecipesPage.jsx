@@ -1,9 +1,7 @@
 import RecipesFilter from "../components/RecipesFilter/RecipesFilter";
-import { Link } from "react-router-dom";
 import "../components/RecipesFilter/recipesFilter.scss";
 import Container from "../components/Сontainer/Сontainer";
-import Card from "../components/Card/Card";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import RecipeService from "../services/RecipeService";
 import Preloader from "../components/Loader/Loader";
 import RecipeCard from "../components/Card/Card";
@@ -26,7 +24,7 @@ const RecipesPage = () => {
   const fetchRecipeList = async () => {
     setIsLoading(true);
 
-    const [response, data] = await RecipeService.getWithPaginate({
+    const [_, data] = await RecipeService.getWithPaginate({
       page: currentPage,
       limit: LIMIT_PER_PAGE,
     });
@@ -86,8 +84,8 @@ const RecipesPage = () => {
       {isLoading && <Preloader />}
 
       {hasNextPage && (
-        <div>
-          <button onClick={onClickHandle}>Показать еще</button>
+        <div className='my-2 flex flex--center'>
+          <button class='button button--orange' onClick={onClickHandle}>Показать еще</button>
         </div>
       )}
     </Container>

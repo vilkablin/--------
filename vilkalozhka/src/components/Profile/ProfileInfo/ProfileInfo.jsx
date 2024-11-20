@@ -1,8 +1,6 @@
 import Container from "../../Сontainer/Сontainer";
 import "../ProfileInfo/profileInfo.scss";
-import profileImage from "../../../assets/images/others/profile.png";
-import profile2 from "../../../assets/images/others/profile2.jpeg";
-import { useState, useEffect, useRef, useContext, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const ProfileInfo = ({ user }) => {
   const ref = useRef();

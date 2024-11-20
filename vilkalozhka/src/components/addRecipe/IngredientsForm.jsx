@@ -1,15 +1,14 @@
 import { useState } from "react";
 
-
 const IngredientsForm = ({ updateIngredients }) => {
-  const [ingredient, setIngredient] = useState('');
+  const [ingredient, setIngredient] = useState("");
   const [ingredientsList, setIngredientsList] = useState([]);
 
   const handleAddIngredient = () => {
-    if (ingredient.trim() !== '') {
+    if (ingredient.trim() !== "") {
       const updatedList = [...ingredientsList, ingredient];
       setIngredientsList(updatedList);
-      setIngredient('');
+      setIngredient("");
 
       updateIngredients(updatedList);
     }

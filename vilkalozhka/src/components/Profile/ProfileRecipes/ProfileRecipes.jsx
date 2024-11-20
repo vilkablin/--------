@@ -1,6 +1,5 @@
 import Container from "../../Сontainer/Сontainer";
 import "../ProfileRecipes/profileRecipes.scss";
-import Card from "../../Card/Card";
 
 const ProfileRecipes = ({ user }) => {
   return (
@@ -10,9 +9,7 @@ const ProfileRecipes = ({ user }) => {
           Рецепты пользователя <span>{user.username}</span>
         </h2>
         <div className="recipes__items">
-          <Card />
-          <Card />
-          <Card />
+          
         </div>
       </div>
     </Container>

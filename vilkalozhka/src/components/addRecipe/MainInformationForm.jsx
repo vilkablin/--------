@@ -1,61 +1,14 @@
 import "../addRecipe/addRecipe.scss";
 
-export const categories = [
-  {
-    id: 1,
-    name: "Завтрак",
-  },
-  {
-    id: 2,
-    name: "Закуски",
-  },
-  {
-    id: 3,
-    name: "Гарнир",
-  },
-  {
-    id: 4,
-    name: "Соусы ",
-  },
-  {
-    id: 5,
-    name: "Десерты",
-  },
-  {
-    id: 6,
-    name: "Коктейли",
-  },
-  {
-    id: 7,
-    name: "Бутерброды",
-  },
-  {
-    id: 8,
-    name: "Ужин",
-  },
-  {
-    id: 9,
-    name: "Второе",
-  },
-  {
-    id: 10,
-    name: "Веган",
-  },
-  {
-    id: 11,
-    name: "Салаты",
-  },
-  {
-    id: 12,
-    name: "Напитки",
-  },
-  {
-    id: 13,
-    name: "Приправа",
-  },
-];
+const MainInformationForm = ({ form, onChangeInputHandle, categories }) => {
+  const onChangeSelected = () => {
+    console.log("implements me");
+  };
 
-const MainInformationForm = ({ form, onChangeInputHandle }) => {
+  const onClickCategoryCheckboxHandle = () => {
+    console.log("implements me");
+  };
+
   return (
     <div className="addInformationForm">
       <div className="formHeader">
@@ -79,9 +32,9 @@ const MainInformationForm = ({ form, onChangeInputHandle }) => {
         </label>
         <input
           id="nameInput"
-          name="name"
+          name="title"
           onChange={(e) => onChangeInputHandle(e)}
-          value={form.name}
+          value={form.title}
           type="text"
           placeholder="Паста с индейкой"
         />
@@ -105,9 +58,9 @@ const MainInformationForm = ({ form, onChangeInputHandle }) => {
             </label>
             <input
               id="timeInput"
-              name="time"
+              name="cooking_time"
               onChange={(e) => onChangeInputHandle(e)}
-              value={form.time}
+              value={form.cooking_time}
               type="number"
               placeholder="Укажите время приготовления в минутах"
             />
@@ -119,16 +72,16 @@ const MainInformationForm = ({ form, onChangeInputHandle }) => {
             </label>
             <input
               id="portionsInput"
-              name="portions"
+              name="number_of_servings"
               onChange={(e) => onChangeInputHandle(e)}
-              value={form.portions}
+              value={form.number_of_servings}
               type="number"
               placeholder="3 порции"
             />
           </div>
 
           <div className="inputs__item">
-            <select name="difficulty">
+            <select name="difficulty" onChange={onChangeSelected}>
               <option value="value">Выберите сложность блюда</option>
               <option value="easy">Легкий</option>
               <option value="normal">Средний</option>
@@ -147,10 +100,10 @@ const MainInformationForm = ({ form, onChangeInputHandle }) => {
             <p>
               Лучше всего подойдет фото квадратного формата, иначе ваша
               фотография обрежется до нужных размеров.
-            </p>{" "}
+            </p>
             <p>
               Изображение должно быть в формате{" "}
-              <span>jpg, png, svg, webp, pdf</span>{" "}
+              <span>jpg, png, svg, webp, pdf</span>
             </p>
           </div>
 
@@ -203,8 +156,13 @@ const MainInformationForm = ({ form, onChangeInputHandle }) => {
         <div className="categories">
           {categories.map((item) => {
             return (
-              <div className="categories__item" key={item.id}>
-                <input type="checkbox" name={item.id} id="" />
+              <div className="categories__item" key={item.value}>
+                <input
+                  onClick={onClickCategoryCheckboxHandle}
+                  type="checkbox"
+                  name={item.value}
+                  id={item.value}
+                />
                 <p>{item.name}</p>
               </div>
             );

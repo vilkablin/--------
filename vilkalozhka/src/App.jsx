@@ -14,7 +14,6 @@ import SubscribesPage from "./pages/SubscribesPage";
 import FavouritesPage from "./pages/FavouritesPage";
 import EditProfilePage from "./pages/EditProfile";
 import AdminPanelPage from "./pages/AdminPanelPage";
-// import Exit from './components/Exit/Exit'
 import { AuthProvider } from "./context/AuthContext";
 
 function App() {

@@ -52,7 +52,7 @@ const RecipePage = () => {
         <div className="layout">
           <div className="aside">
             <Ingredients ingredients={item.ingredients} />
-            <Comments />
+            <Comments recipe={id} />
           </div>
           <Stages steps={item.steps} />
         </div>

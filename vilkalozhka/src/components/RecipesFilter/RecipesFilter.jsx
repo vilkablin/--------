@@ -1,7 +1,5 @@
 import "../RecipesFilter/recipesFilter.scss";
 
-import { categories } from "../addRecipe/MainInformationForm";
-
 const RecipesFilter = () => {
   return (
     <>
@@ -14,10 +12,9 @@ const RecipesFilter = () => {
             </div>
 
             <div className="input-wrapper">
-            <input type="search" placeholder="Включает в себя ингредиенты" />
+              <input type="search" placeholder="Включает в себя ингредиенты" />
             </div>
 
-            
             <select name="difficulty">
               <option value="value">Выберите сложность блюда</option>
               <option value="easy">Легкий</option>
@@ -32,9 +29,9 @@ const RecipesFilter = () => {
             </select>
             <select>
               <option>Категории</option>
-              {categories.map((item, index) => {
+              {/* {categories.map((item, index) => {
                 return <option key={index}>{item.name}</option>;
-              })}
+              })} */}
             </select>
             <select>
               <option>Упорядочить по</option>

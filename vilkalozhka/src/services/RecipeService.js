@@ -43,6 +43,22 @@ const RecipeService = {
 
     return [response, data];
   },
+  async getCategories() {
+    const token = localStorage.getItem(TOKEN_STORAGE_KEY) ?? "";
+
+    const response = await fetch(`${API_URL}/api/recipe/categories`, {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    const data = await response.json();
+
+    return [response, data];
+  },
 };
 
 export default RecipeService;
