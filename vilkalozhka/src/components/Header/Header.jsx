@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <Container>
       <header>
-        <div className="logo"><img src={logo} alt="ВилкаЛожка" /></div>
+        <Link className="logo" to='/'><img src={logo} alt="ВилкаЛожка" /></Link>
 
         <button className="header__burger" onClick={handleBurgerMenuClick}>☰</button>
 
