@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import "../Comments/comments.scss";
 import CommentService from "../../../services/CommentService";
 import Preloader from "../../Loader/Loader";
+import profileDefaultImage from '../../../assets/images/others/profileDefault.jpg'
 
 const Comments = ({ recipe }) => {
   const [items, setItems] = useState([]);
@@ -94,7 +95,7 @@ const Comments = ({ recipe }) => {
                   style={{
                     backgroundImage: !!user.photo_url
                       ? `url('${user.photo_url}')`
-                      : "none",
+                      : `url('${profileDefaultImage})`,
                   }}
                 ></div>
                 <h4>{user.username}</h4>

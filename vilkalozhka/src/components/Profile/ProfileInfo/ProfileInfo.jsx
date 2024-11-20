@@ -1,6 +1,7 @@
 import Container from "../../Сontainer/Сontainer";
 import "../ProfileInfo/profileInfo.scss";
 import { useState, useEffect, useRef } from "react";
+import profileDefaultImage from '../../../assets/images/others/profileDefault.jpg'
 
 const ProfileInfo = ({ user }) => {
   const ref = useRef();
@@ -57,7 +58,7 @@ const ProfileInfo = ({ user }) => {
     <Container>
       <div className="profile">
         <div className="profile__image">
-          <img src={user.photo} alt="Изображение профиля" />
+          <img src={user.photo ? user.photo :profileDefaultImage } alt="Изображение профиля" />
         </div>
         <div className="profile__info">
           <div className="profile__nickname">

@@ -15,6 +15,7 @@ import FavouritesPage from "./pages/FavouritesPage";
 import EditProfilePage from "./pages/EditProfile";
 import AdminPanelPage from "./pages/AdminPanelPage";
 import { AuthProvider } from "./context/AuthContext";
+import EditRecipePage from "./pages/EditRecipe";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/recipes/:id" element={<RecipePage />} />
+        <Route path="/editRecipes/:id" element={<EditRecipePage />} />
         <Route path="/signin" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/profile" element={<ProfilePage />} />
