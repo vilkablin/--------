@@ -16,6 +16,7 @@ import EditProfilePage from "./pages/EditProfile";
 import AdminPanelPage from "./pages/AdminPanelPage";
 import { AuthProvider } from "./context/AuthContext";
 import EditRecipePage from "./pages/EditRecipe";
+import NotFoundPage from "./pages/404Page";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/favourites" element={<FavouritesPage />} />
         <Route path="/editProfile" element={<EditProfilePage />} />
         <Route path="/admin" element={<AdminPanelPage />} />
+        <Route path="/*" element={<NotFoundPage/>} />
       </Routes>
       <Footer />
     </AuthProvider>
